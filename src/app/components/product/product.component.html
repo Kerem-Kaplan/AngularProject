@@ -4,18 +4,18 @@
 <table *ngIf="dataLoaded==true" class="table">
   <thead>
     <tr>
-      <th>ID</th>
+      <th>ProductID</th>
       <th>Ürün Adı</th>
-      <th>Kategori</th>
-      <th>Fiyat</th>
+      <th>KategoriID</th>
+      <th>Fiyatı</th>
       <th>Stok Adedi</th>
     </tr>
   </thead>
   
   <tr *ngFor="let product of products">
-    <td>{{product.productId}}</td>
+    <td>{{product.productID}}</td>
     <td>{{product.productName}}</td>
-    <td>{{product.categoryId}}</td>
+    <td>{{product.categoryID}}</td>
     <td>{{product.unitPrice}}</td>
     <td>{{product.unitsInStock}}</td>
   </tr>
